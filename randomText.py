@@ -11,7 +11,6 @@ def get_random_line(file_path):
         if lines:
             # 随机选择一行
             random_line = random.choice(lines).strip()
-            print(type(random_line))
             return random_line
         else:
             return "文件是空的。"
@@ -21,7 +20,8 @@ def get_random_line(file_path):
         return f"发生错误：{e}"
 
 if __name__ == "__main__":
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    file_path = os.path.join(current_dir, 'Text.txt')  # 构建文件路径
+    # current_dir = os.path.dirname(os.path.abspath(__file__))
+    # file_path = os.path.join(current_dir, 'Text.txt')  # 构建文件路径
+    file_path = "Text.txt"
     random_line = get_random_line(file_path)
     print(random_line)
