@@ -2,8 +2,7 @@ from random import randint
 
 class GuessProgram:
     def __init__(self):
-        # self.ans = randint(1, 100)
-        self.ans = 50
+        self.ans = randint(1, 100)
     
     def rules(self):
         return"""
